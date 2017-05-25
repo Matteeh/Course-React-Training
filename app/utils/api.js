@@ -12,13 +12,13 @@ function getProfile (username) {
     });
 }
 
-function getRepos () {
+function getRepos (username) {
     return axios.get("https://api.github.com/users/" + username + "/repos" + params + "&per_page=100")
 }   
 
 function getStarCount (repos) {
     return repos.data.reduce(function (count, repo){
-        return counter + repo.stargazers_count;
+        return count + repo.stargazers_count;
     },0)
 }
 

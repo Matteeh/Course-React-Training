@@ -1,5 +1,4 @@
 var React = require('react');
-var PropTypes = require('prop-types');
 var Popular = require('./Popular');
 var ReactRouter = require('react-router-dom');
 var Router = ReactRouter.BrowserRouter;
